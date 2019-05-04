@@ -138,6 +138,14 @@ angular.module('starter.controllers', [])
 
 
 .controller('AccountCtrl', function($scope) {
+  //cuando inicié el documento detecte el alto
+  $(document).ready(function() {
+    var alto = $( window ).height();
+    //ajustar fondo
+    $( ".fondoblanco" ).css({
+      height: alto
+    })
+  });
 })
 
 
