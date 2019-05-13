@@ -86,3 +86,10 @@
   padding: 5px;
   color :#fff;
 }
+.fondoblanco{
+  background-color: #212529;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+  width: 100%;
+  padding: 5%;
+}
