@@ -1,11 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('principalCtrl', function($scope) {
-  
+.controller('DashCtrl', function($scope) {
 
 })
 
-.controller('memoriaCtrl', function($scope) {
+.controller('ChatsCtrl', function($scope) {
 //variables globales para el juego
   var iTiempoTranscurrido=iPuntosObtenidos=0, iTiempoLimite=70, objPrimero;
   var blnJuegoFinalizado=false;
@@ -138,7 +137,7 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('infografiaCtrl', function($scope) {
+.controller('AccountCtrl', function($scope) {
   //cuando inicié el documento detecte el alto
   $(document).ready(function() {
     var alto = $( window ).height();
@@ -150,7 +149,7 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('adnCtrl',function($scope){
+.controller('infoCtrl',function($scope){
   //controlador 
   const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');

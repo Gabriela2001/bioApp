@@ -44,42 +44,51 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.principal', {
-    url: '/principal',
+  .state('tab.dash', {
+    url: '/dash',
     views: {
-      'tab-principal': {
-        templateUrl: 'templates/principal.html',
-        controller: 'principalCtrl'
+      'tab-dash': {
+        templateUrl: 'templates/tab-dash.html',
+        controller: 'DashCtrl'
       }
     }
   })
 
-  .state('tab.adn',{
-    url:'/adn',
+  .state('tab.info',{
+    url:'/info',
     views: {
-      'tab-adn':{
-        templateUrl:'templates/adn.html',
-        controller: 'adnCtrl'
+      'tab-info':{
+        templateUrl:'templates/info-local.html',
+        controller: 'infoCtrl'
       }
     }
   })
 
-  .state('tab.memoria', {
-      url: '/memoria',
+  .state('tab.chats', {
+      url: '/chats',
       views: {
-        'tab-memoria':{
-          templateUrl: 'templates/memoria.html',
-          controller: 'memoriaCtrl'
+        'tab-chats':{
+          templateUrl: 'templates/tab-chats.html',
+          controller: 'ChatsCtrl'
+        }
+      }
+    })
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/chat-detail.html',
+          controller: 'ChatDetailCtrl'
         }
       }
     })
 
-  .state('tab.infografia', {
-    url: '/infografia',
+  .state('tab.account', {
+    url: '/account',
     views: {
-      'tab-infografia': {
-        templateUrl: 'templates/infografia.html',
-        controller: 'infografiaCtrl'
+      'tab-account': {
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
       }
     } 
   });
