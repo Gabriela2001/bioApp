@@ -1,7 +1,13 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
-
+  $(document).ready(function() {
+    var alto = $( window ).height();
+    //ajustar fondo
+    $( ".fondoblanco" ).css({
+      height: alto
+    })
+  });
 })
 
 .controller('ChatsCtrl', function($scope) {
