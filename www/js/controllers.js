@@ -1,6 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
+ //cuando inicié el documento detecte el alto
   $(document).ready(function() {
     var alto = $( window ).height();
     //ajustar fondo
@@ -9,6 +10,19 @@ angular.module('starter.controllers', [])
     })
   });
 })
+
+
+.controller('videosCtrl', function($scope) {
+ //cuando inicié el documento detecte el alto
+  $(document).ready(function() {
+    var alto = $( window ).height();
+    //ajustar fondo
+    $( ".fondoblanco" ).css({
+      height: alto
+    })
+  });
+})
+
 
 .controller('ChatsCtrl', function($scope) {
 //variables globales para el juego
