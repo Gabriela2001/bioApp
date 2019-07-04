@@ -83,6 +83,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.arbol', {
+      url: '/arbol',
+      views: {
+        'tab-arbol':{
+          templateUrl: 'templates/tab-arbol.html',
+          controller: 'arbolCtrl'
+        }
+      }
+    })
+
+
     .state('tab.videos', {
       url: '/videos',
       views: {
@@ -92,6 +103,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
+
 
   .state('tab.account', {
     url: '/account',
